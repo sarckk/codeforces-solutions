@@ -1,22 +1,13 @@
-#include <iostream>
-#include <array>
+#include <bits/stdc++.h>
+
+using namespace std;
+int n;
 
 int main () {
-    std::array count = {0,0,0};
-    int a;
-    char b;
-    while(;std::cin>>a;) {
-        count[a]++;
-        std::cin.ignore(1, '\n');
-    }
-
-    int i = 1;
-    int l = count.size()
-    while(i <= l) {
-        count[i]--;
-        if(count[i] != 0) {
-            std::cout << i-1 << (count[i] && i==l-1) ? "+" : "";
+    for(int i = 1; i <= 5; i++) {
+        for(int j = 1; j <=5; j++) {
+            cin >> n;
+            if(n == 1) cout << std::abs(3-i) + std::abs(3-j);
         }
-        if(count[i] == 0) { i++; }
     }
 }
